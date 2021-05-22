@@ -6,17 +6,17 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('#date').innerHTML = "As of: " + data.date;    
     
     rates = data.rates;
-    document.querySelector('#usd').innerHTML = 'US Dollar:   ' + rates.USD.toFixed(2); 
-    document.querySelector('#eur').innerHTML = 'Euro:   ' + rates.EUR.toFixed(2); 
-    document.querySelector('#cny').innerHTML = 'Chinese Yuan: ' + rates.CNY.toFixed(2);    
-    document.querySelector('#krw').innerHTML = 'Korean Won:   ' + rates.KRW.toFixed(2); 
-    document.querySelector('#jpy').innerHTML = 'Japanese Yen:   ' + rates.JPY.toFixed(2); 
-    document.querySelector('#inr').innerHTML = 'Indian Rupee:   ' + rates.INR.toFixed(2); 
-    document.querySelector('#aud').innerHTML = 'Australian Dollar:   ' + rates.AUD.toFixed(2); 
-    document.querySelector('#gbp').innerHTML = 'British Pound:   ' + rates.GBP.toFixed(2); 
-    document.querySelector('#rub').innerHTML = 'Russian Ruble:   ' + rates.RUB.toFixed(2); 
-    document.querySelector('#cad').innerHTML = 'Canadian Dollar:   ' + rates.CAD.toFixed(2); 
-    document.querySelector('#mxn').innerHTML = 'Mexican Peso:   ' + rates.MXN.toFixed(2); 
+    document.querySelector('#usd').innerHTML = 'US Dollar:   ' + rates.USD.toFixed(0); 
+    document.querySelector('#eur').innerHTML = 'Euro:   ' + rates.EUR.toFixed(0); 
+    document.querySelector('#cny').innerHTML = 'Chinese Yuan: ' + rates.CNY.toFixed(0);    
+    document.querySelector('#krw').innerHTML = 'Korean Won:   ' + rates.KRW.toFixed(0); 
+    document.querySelector('#jpy').innerHTML = 'Japanese Yen:   ' + rates.JPY.toFixed(0); 
+    document.querySelector('#inr').innerHTML = 'Indian Rupee:   ' + rates.INR.toFixed(0); 
+    document.querySelector('#aud').innerHTML = 'Australian Dollar:   ' + rates.AUD.toFixed(0); 
+    document.querySelector('#gbp').innerHTML = 'British Pound:   ' + rates.GBP.toFixed(0); 
+    document.querySelector('#rub').innerHTML = 'Russian Ruble:   ' + rates.RUB.toFixed(0); 
+    document.querySelector('#cad').innerHTML = 'Canadian Dollar:   ' + rates.CAD.toFixed(0); 
+    document.querySelector('#mxn').innerHTML = 'Mexican Peso:   ' + rates.MXN.toFixed(0); 
     
  })
 
