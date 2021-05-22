@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('#date').innerHTML = "As of: " + data.date;    
     
     rates = data.rates;
-    document.querySelector('#usd').innerHTML = 'US Dollar:   ' + rates.USD.toFixed(0); 
+    document.querySelector('#usd').innerHTML = 'US Dollar:   ' + rates.USD.toLocaleString("en-US"); 
     document.querySelector('#eur').innerHTML = 'Euro:   ' + rates.EUR.toFixed(0); 
     document.querySelector('#cny').innerHTML = 'Chinese Yuan: ' + rates.CNY.toFixed(0);    
     document.querySelector('#krw').innerHTML = 'Korean Won:   ' + rates.KRW.toFixed(0); 
